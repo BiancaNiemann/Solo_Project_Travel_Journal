@@ -3,7 +3,7 @@ import React from "react"
 export default function Main(props){
     return(
         <div className="travel-card">
-            <img className="image" src={`../Images/${props.place.imageUrl}`} alt="Image of destination"/>
+            <img className="image" src="..Images/Hoernlebahn.jpg" alt="Image of destination"/>
             <div className="travel-info">
                 <div className="top-line">
                     <i className="fa-solid fa-location-dot"></i>

@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: lightgrey
+}
+
+.container{
+    width: 750px;
+    margin: 2em auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.nav-bar,
+.travel-card,
+.top-line{
+    display: flex; 
+}
+
+
+.nav-bar{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F55A5A;
+    height: 5em;
+    color: white; 
+    margin-bottom: 2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h1{
+    font-size: 1.25rem;
+    padding-left: 0.5em;
+    font-weight: 500;
+}
+
+h1,
+.location-info{
+    margin: 0;
+}
+
+
+.fa-earth-europe{
+    font-size: 2.5rem;
+}
+
+.travel-card{
+    margin-left: 2em;
+    margin-right: 2em;
+    border-bottom: 1px solid lightgrey;
+    padding: 1.5em 0 1.5em 0;
+}
+
+.travel-card:last-child{
+    border-bottom: none;
+}
+
+.image{
+    width: 11em;
+    height: 15em;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.travel-info{
+    margin-left: 1.5em
+}
+
+.top-line{
+    margin-top: 1em;
+}
+
+.fa-location-dot,
+.maps-link,
+.location-info,
+.place-title,
+.description{
+    font-size: 0.85rem;
+}
+
+.fa-location-dot{
+    color: #F55A5A;
+    margin-right: 0.35em;
+}
+
+.maps-link,
+.location-info{
+    font-weight: 400;
+}
+
+.location-info{
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    margin-right: 2em
+}
+
+.maps-link{
+    color: #918E9B;
+}
+
+.place-title,
+.start-end{
+    font-weight: 700;
+}
+
+.place-title,
+.start-end,
+.description{
+    color: #2B283A;
+}
+
+.place-title,
+.description{
+    margin-bottom: 0  
+}
+
+.place-title{
+    font-size: 2rem;
+    margin-top: 0.25em;
+}
+
+.start-end{
+    margin-top: 1.25em
+}
+
+.description{
+    line-height: 150%;
+    padding-right: 0.25em;
+}
+
+@media (max-width: 750px){
+    .container{
+        width: 530px;
+    }
+    .travel-card{
+        flex-direction: column;
+    }
+    .image{
+        align-self: center
+    }
+    .travel-info{
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center
+    }
+    .top-line{
+        justify-content: center
+    }
+}
